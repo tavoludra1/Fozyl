@@ -18,7 +18,7 @@ struct FozylTabView: View {
         TabView(selection: $selectedTab) {
             
             // items
-            Text("Home")
+            HomeView()
                 .tabItem {
                     Image(systemName: selectedTab == 0 ? "house.fill" : "house")
                         .environment(\.symbolVariants, selectedTab == 0 ? .fill : .none)
@@ -26,7 +26,7 @@ struct FozylTabView: View {
                 .onAppear { selectedTab = 0 }
                 .tag(0)
             
-            Text("Search")
+            SearchView()
                 .tabItem {
                     Image(systemName: "magnifyingglass")
                 }
@@ -34,7 +34,7 @@ struct FozylTabView: View {
                 .tag(1)
             
             
-            Text("Profile")
+            ProfileView()
                 .tabItem {
                     Image(systemName: selectedTab == 2 ? "person.fill" : "person")
                         .environment(\.symbolVariants, selectedTab == 2 ? .fill : .none)
