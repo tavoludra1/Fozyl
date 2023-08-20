@@ -34,7 +34,7 @@ struct RegistrationView: View {
                     .autocapitalization(.words) // cada inicio de palabra mayuscula
                     .modifier(FozylTextFieldModifier())
                 
-                TextField("Ingrese el número de identificación (CC)", text: $dni)
+                TextField("Ingrese su número de identificación (CC)", text: $dni)
                     .modifier(FozylTextFieldModifier())
                 
                 TextField("Ingrese su correo electrónico", text: $email)
