@@ -61,8 +61,6 @@ struct LoginView: View {
                         .padding(.trailing, 28)
                         .foregroundColor(.black)
                         .frame(maxWidth: .infinity, alignment: .trailing)
-
-
                 }
                 
                 
