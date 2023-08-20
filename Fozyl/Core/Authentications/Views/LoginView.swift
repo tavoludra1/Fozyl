@@ -77,7 +77,9 @@ struct LoginView: View {
                 
                 // Vista de creacion usuario sistema
                 NavigationLink {
-                    Text("Vista de Registro usuario")
+                    // envia a la vista de registro
+                    RegistrationView()
+                        .navigationBarBackButtonHidden(true)
                 } label: {
                     HStack(spacing: 3) {
                         Text("¿No tienes una cuenta?")

@@ -16,6 +16,9 @@ struct RegistrationView: View {
     @State private var email = ""
     @State private var password = ""
     
+    // Descartar la presentacion actual
+    @Environment(\.dismiss) var dismiss
+    
     var body: some View {
         VStack {
             Spacer()
@@ -74,9 +77,9 @@ struct RegistrationView: View {
             
             Divider()
             
-            // Vista de creacion usuario sistema
+            // Vista de retornar Inicio de Sesion
             Button {
-                // accion
+                dismiss()
             } label: {
                 HStack(spacing: 3) {
                     Text("¿Ya tienes una cuenta?")
