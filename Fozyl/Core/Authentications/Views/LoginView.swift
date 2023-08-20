@@ -32,20 +32,13 @@ struct LoginView: View {
                 // campos de texto
                 VStack {
                     TextField("Ingrese su correo electrónico", text: $email)
-                        .font(.subheadline)
-                        .padding(12)
-                        .background(Color(.systemGray6))
-                        .cornerRadius(10)
-                        .padding(.horizontal, 24)
+                        .autocapitalization(.none) // para evitar las mayusculas
+                        .modifier(FozylTextFieldModifier())
                     
                     
                     // campo seguro para claves
                     SecureField("Ingrese su contraseña", text: $password)
-                        .font(.subheadline)
-                        .padding(12)
-                        .background(Color(.systemGray6))
-                        .cornerRadius(10)
-                        .padding(.horizontal, 24)
+                        .modifier(FozylTextFieldModifier())
                         
                 }
                 // TODO: Desactivar el padding con olvido clave              .padding(.bottom)

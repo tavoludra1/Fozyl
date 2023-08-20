@@ -13,6 +13,7 @@
 		B30BD05F2A915B86003672EE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B30BD05E2A915B86003672EE /* Preview Assets.xcassets */; };
 		B35542FB2A929E2700C5FEFC /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35542FA2A929E2700C5FEFC /* LoginView.swift */; };
 		B35542FD2A92AB8300C5FEFC /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35542FC2A92AB8300C5FEFC /* RegistrationView.swift */; };
+		B35591512A92B57800D50C0D /* FozylTextFieldModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35591502A92B57800D50C0D /* FozylTextFieldModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		B30BD05E2A915B86003672EE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B35542FA2A929E2700C5FEFC /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		B35542FC2A92AB8300C5FEFC /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
+		B35591502A92B57800D50C0D /* FozylTextFieldModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FozylTextFieldModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +63,6 @@
 				B35542F32A929D4C00C5FEFC /* Model */,
 				B35542F22A929D4B00C5FEFC /* Services */,
 				B35542F12A929D4800C5FEFC /* Utils */,
-				B30BD0592A915B85003672EE /* ContentView.swift */,
 				B30BD05B2A915B86003672EE /* Assets.xcassets */,
 				B30BD05D2A915B86003672EE /* Preview Content */,
 			);
@@ -79,6 +80,7 @@
 		B35542F12A929D4800C5FEFC /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				B355914F2A92B54800D50C0D /* ViewModifiers */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -132,6 +134,7 @@
 		B35542F82A929DC000C5FEFC /* Root */ = {
 			isa = PBXGroup;
 			children = (
+				B30BD0592A915B85003672EE /* ContentView.swift */,
 			);
 			path = Root;
 			sourceTree = "<group>";
@@ -143,6 +146,14 @@
 				B35542FC2A92AB8300C5FEFC /* RegistrationView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		B355914F2A92B54800D50C0D /* ViewModifiers */ = {
+			isa = PBXGroup;
+			children = (
+				B35591502A92B57800D50C0D /* FozylTextFieldModifier.swift */,
+			);
+			path = ViewModifiers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -218,6 +229,7 @@
 				B35542FB2A929E2700C5FEFC /* LoginView.swift in Sources */,
 				B30BD05A2A915B85003672EE /* ContentView.swift in Sources */,
 				B30BD0582A915B85003672EE /* FozylApp.swift in Sources */,
+				B35591512A92B57800D50C0D /* FozylTextFieldModifier.swift in Sources */,
 				B35542FD2A92AB8300C5FEFC /* RegistrationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -31,32 +31,19 @@ struct RegistrationView: View {
             // campos de texto
             VStack {
                 TextField("Ingrese su nombre completo", text: $fullname)
-                    .font(.subheadline)
-                    .padding(12)
-                    .background(Color(.systemGray6))
-                    .cornerRadius(10)
-                    .padding(.horizontal, 24)
+                    .autocapitalization(.words) // cada inicio de palabra mayuscula
+                    .modifier(FozylTextFieldModifier())
                 
                 TextField("Ingrese el número de identificación (CC)", text: $dni)
-                    .font(.subheadline)
-                    .padding(12)
-                    .background(Color(.systemGray6))
-                    .cornerRadius(10)
-                    .padding(.horizontal, 24)
+                    .modifier(FozylTextFieldModifier())
                 
                 TextField("Ingrese su correo electrónico", text: $email)
-                    .font(.subheadline)
-                    .padding(12)
-                    .background(Color(.systemGray6))
-                    .cornerRadius(10)
-                    .padding(.horizontal, 24)
+                    .autocapitalization(.none) // evitar las mayusculas
+                    .modifier(FozylTextFieldModifier())
                 
                 TextField("Ingrese el nombre de la empresa contratante", text: $company)
-                    .font(.subheadline)
-                    .padding(12)
-                    .background(Color(.systemGray6))
-                    .cornerRadius(10)
-                    .padding(.horizontal, 24)
+                    .autocapitalization(.words) // cada inicio de palabra mayuscula
+                    .modifier(FozylTextFieldModifier())
                 
                 
                 // campo seguro para claves
