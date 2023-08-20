@@ -14,6 +14,7 @@
 		B35542FB2A929E2700C5FEFC /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35542FA2A929E2700C5FEFC /* LoginView.swift */; };
 		B35542FD2A92AB8300C5FEFC /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35542FC2A92AB8300C5FEFC /* RegistrationView.swift */; };
 		B35591512A92B57800D50C0D /* FozylTextFieldModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35591502A92B57800D50C0D /* FozylTextFieldModifier.swift */; };
+		B35591562A92C21700D50C0D /* FozylTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35591552A92C21700D50C0D /* FozylTabView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		B35542FA2A929E2700C5FEFC /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		B35542FC2A92AB8300C5FEFC /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
 		B35591502A92B57800D50C0D /* FozylTextFieldModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FozylTextFieldModifier.swift; sourceTree = "<group>"; };
+		B35591552A92C21700D50C0D /* FozylTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FozylTabView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 			children = (
 				B35542F72A929DA600C5FEFC /* Authentications */,
 				B35542F82A929DC000C5FEFC /* Root */,
+				B35591522A92C10A00D50C0D /* TabBar */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -154,6 +157,14 @@
 				B35591502A92B57800D50C0D /* FozylTextFieldModifier.swift */,
 			);
 			path = ViewModifiers;
+			sourceTree = "<group>";
+		};
+		B35591522A92C10A00D50C0D /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				B35591552A92C21700D50C0D /* FozylTabView.swift */,
+			);
+			path = TabBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,6 +242,7 @@
 				B30BD0582A915B85003672EE /* FozylApp.swift in Sources */,
 				B35591512A92B57800D50C0D /* FozylTextFieldModifier.swift in Sources */,
 				B35542FD2A92AB8300C5FEFC /* RegistrationView.swift in Sources */,
+				B35591562A92C21700D50C0D /* FozylTabView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
